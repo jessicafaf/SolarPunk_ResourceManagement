@@ -8,17 +8,19 @@
 ---
 
 ## 📊 SYSTEM ARCHITECTURE
+```text
 [Python Local Environment]                    [ServiceNow Cloud Platform]
 AI Simulation Script                           Table: Solar Diagnostics
 (send_ai_data.py)                              (Custom Data Model)
-│                                               │
-▼                                               ▼
+       │                                               │
+       ▼                                               ▼
 REST API POST   ──────────────────────────►   Before Insert Trigger
 (Data Payload: 5% Solar)                       (JS Business Rule Automation)
-│
-▼
-Compliance Action
-(Status Forced to CRITICAL)
+                                                       │
+                                                       ▼
+                                               Compliance Action
+                                          (Status Forced to CRITICAL)
+```
 ## 🚀 PROJECT OVERVIEW
 
 This repository showcases a complete end-to-end integration between a local machine-learning environment (**Python**) and an enterprise cloud platform (**ServiceNow**). It implements a **SolarPunk** sustainable ecosystem framework, demonstrating how data governance, ITIL principles, and automated compliance rules can safeguard critical infrastructure data.
